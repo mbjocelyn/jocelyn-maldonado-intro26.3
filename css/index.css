@@ -1,0 +1,184 @@
+/* here im going to change the background color and the text color */
+body {
+    background-color: #f8d7e8;
+    color: #333333;  
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    /*padding: 20px;*/
+    padding: 0;
+}
+
+/*Navigation*/
+nav {
+    background-color: #f4b6d2;
+    padding: 18px 25px;
+    text-align: center;
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/*spacing between sections 
+section {
+    margin: 30px 0;
+    padding: 20px;
+}*/
+
+/*updating the section*/
+section { background-color: #fff5fa; margin: 20px auto; padding: 25px; max-width: 850px; border-radius: 15px; }
+
+/*alignment of section*/
+#connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+/*Main heading*/
+/*style of headings*/
+h1 {
+    /*centered in middle*/
+    font-size: 42px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+h2 {
+   /* centered in middle*/
+    font-size: 28px;
+    color: #34495e;
+}
+
+/*Name*/
+#name {
+    font-size: 48px;
+    font-weight: bold;
+    color: #6c4f3d;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    
+}
+
+
+/*since i switched my experience fro <ul> and <li> to <div> i need to change it on here too*/
+/*#experience ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+}*/
+#experience div {
+ background-color: white;
+ padding: 20px; 
+ margin-bottom: 15px; 
+ border-radius: 10px; }
+
+/*#experience li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    margin: 0;
+    border-radius: 8px;
+    list-style: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}*/
+/* Experience headings */
+ #experience h3 { 
+font-size: 22px;  
+margin-top: 0;
+margin-bottom: 8px; } 
+     
+/* Experience text */ 
+#experience p { margin: 8px 0; }
+
+
+
+
+ #connect a {
+    color: #6c4f3d;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;}
+
+    #connect a:hover {
+        text-decoration: underline;
+        color: #2c3e50;
+    }
+
+    #skills ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+
+    /* Message Form */
+#leave-message form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+#leave-message input,
+#leave-message textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#leave-message textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#leave-message button {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+/* Mobile sizing */
+@media (max-width: 600px) {
+    #leave-message input,
+    #leave-message textarea {
+        min-height: 44px;
+        font-size: 16px;
+    }
+
+    #leave-message button {
+        min-height: 44px;
+        padding: 12px 20px;
+        width: 100%;
+    }
+}
+
+#projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+  }
+  /* the boarder on projects*/
+  #projects li {
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    flex: 1 1 200px;
+  }
