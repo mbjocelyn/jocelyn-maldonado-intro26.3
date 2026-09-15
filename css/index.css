@@ -27,14 +27,15 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/*spacing between sections 
-section {
-    margin: 30px 0;
-    padding: 20px;
-}*/
+
 
 /*updating the section*/
-section { background-color: #fff5fa; margin: 20px auto; padding: 25px; max-width: 850px; border-radius: 15px; }
+section { 
+background-color: #fff5fa; 
+margin: 20px auto; 
+padding: 25px; 
+max-width: 850px; 
+border-radius: 15px; }
 
 /*alignment of section*/
 #connect {
@@ -71,30 +72,20 @@ h2 {
 
 
 /*since i switched my experience fro <ul> and <li> to <div> i need to change it on here too*/
-/*#experience ul {
+
+#experience {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 0;
-}*/
+    gap: 15px;
+}
+
 #experience div {
  background-color: white;
  padding: 20px; 
- margin-bottom: 15px; 
+ /*margin-bottom: 15px; */
  border-radius: 10px; }
 
-/*#experience li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 20px;
-    margin: 0;
-    border-radius: 8px;
-    list-style: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}*/
+
 /* Experience headings */
  #experience h3 { 
 font-size: 22px;  

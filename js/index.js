@@ -1,5 +1,5 @@
 
-
+//Created footer and add copyright information
 const body = document.getElementsByTagName("body")[0];
 
 const footer = document.createElement("footer");
@@ -11,12 +11,12 @@ const thisYear = today.getFullYear();
 
 const copyright = document.createElement("p");
 
-copyright.innerHTML = `© ${thisYear} Jocelyn Maldonado`;
+copyright.innerHTML = `© ${thisYear} Jocelyn Maldonado-Bolanos`;
 
 footer.appendChild(copyright);
 
 
-
+//Skills section
 const skills = ["Python", "MATLAB", "C++", "GitHub", "HTML", "CSS"];
 
 const skillsSection = document.getElementById("skills");
@@ -30,7 +30,7 @@ for (let i = 0; i < skills.length; i++) {
 }
 
 
-//Handle Message from Submit 
+//Handle Message form Submission 
 const messageForm = document.forms["leave_message"];
 
 
@@ -69,7 +69,7 @@ messageForm.addEventListener("submit", function(event) {
 });
 
 
-//creating fetch
+//creating fetch github repositories and add them to the projetcs section
 fetch("https://api.github.com/users/mbjocelyn/repos")
     .then(function(response){
         return response.json();
