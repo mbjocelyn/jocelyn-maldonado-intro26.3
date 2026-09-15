@@ -123,3 +123,18 @@ h2 {
         width: 100%;
     }
 }
+
+#projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+  }
+  /* the boarder on projects*/
+  #projects li {
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    flex: 1 1 200px;
+  }
